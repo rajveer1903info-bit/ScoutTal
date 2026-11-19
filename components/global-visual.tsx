@@ -1,12 +1,15 @@
 export function GlobalVisual() {
-  return <div className="global-visual" role="img" aria-label="Abstract network showing international startup hubs connected to talent in India">
+  return <div className="global-visual" role="img" aria-label="Abstract recruitment workflow connecting role requirements with screened talent and a focused shortlist">
     <svg viewBox="0 0 620 500" aria-hidden="true">
-      <defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#98A2B3" opacity=".45" /></pattern></defs>
-      <rect width="620" height="500" rx="24" fill="#F8FAFC"/><path d="M77 123c54-73 138-90 213-64 52 18 98 5 150 7 67 2 120 47 116 116-3 59-48 75-67 122-22 54-27 112-88 135-59 23-110-10-166-18-67-9-132 23-177-27-40-45-8-99 0-149 7-43-9-82 19-122Z" fill="url(#dots)"/>
-      <g fill="none" stroke="#3867F6" strokeWidth="2"><path d="M106 167C248 192 326 286 409 331"/><path d="M191 109C272 186 334 258 409 331"/><path d="M445 126C429 214 420 268 409 331"/><path d="M514 226C476 272 449 302 409 331"/><path d="M173 374C263 367 333 347 409 331"/></g>
-      {[[106,167],[191,109],[445,126],[514,226],[173,374]].map(([x,y],i)=><g key={i}><circle cx={x} cy={y} r="8" fill="#fff" stroke="#3867F6" strokeWidth="3"/><circle cx={x} cy={y} r="2" fill="#3867F6"/></g>)}
-      <circle cx="409" cy="331" r="36" fill="#EAF1FF"/><circle cx="409" cy="331" r="17" fill="#3867F6"/><circle cx="409" cy="331" r="5" fill="#fff"/>
-      <g className="map-labels"><text x="78" y="150">US</text><text x="170" y="91">CANADA</text><text x="422" y="108">UK / EUROPE</text><text x="494" y="208">AUSTRALIA</text><text x="385" y="387" className="india-label">INDIA</text></g>
-    </svg><div className="visual-caption"><span>5 global markets</span><span className="pulse-dot" /> <strong>1 focused talent destination</strong></div>
+      <defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#98A2B3" opacity=".32" /></pattern></defs>
+      <rect width="620" height="500" rx="24" fill="#F8FAFC"/><rect x="28" y="28" width="564" height="444" rx="18" fill="url(#dots)"/>
+      <rect x="62" y="76" width="170" height="310" rx="16" fill="#FFFFFF" stroke="#DDE5F2"/><text x="88" y="110" className="visual-kicker">ROLE SIGNALS</text>
+      {[[88,145,112],[88,188,86],[88,231,126],[88,274,72]].map(([x,y,w],i)=><g key={i}><rect x={x} y={y} width={w} height="12" rx="6" fill={i===0?"#3867F6":"#DCE6FF"}/><rect x={x} y={y+19} width={Math.max(48,w-28)} height="7" rx="3.5" fill="#E4E7EC"/></g>)}
+      <circle cx="310" cy="231" r="70" fill="#EAF1FF"/><circle cx="310" cy="231" r="42" fill="#3867F6"/><path d="m293 231 12 12 24-28" fill="none" stroke="#fff" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/><text x="276" y="330" className="visual-kicker">SCREENED</text>
+      <g fill="none" stroke="#98B4FF" strokeWidth="2"><path d="M232 154C270 167 281 186 292 195"/><path d="M232 252C266 248 279 242 287 238"/><path d="M380 206C412 190 430 172 449 154"/><path d="M380 250C416 264 432 286 449 308"/></g>
+      <rect x="414" y="76" width="142" height="310" rx="16" fill="#101828"/><text x="438" y="110" className="visual-kicker visual-kicker-light">SHORTLIST</text>
+      {[[438,143],[438,207],[438,271]].map(([x,y],i)=><g key={i}><circle cx={x+15} cy={y+15} r="15" fill={i===0?"#3867F6":"#344054"}/><rect x={x+40} y={y+3} width="62" height="8" rx="4" fill="#FFFFFF" opacity=".9"/><rect x={x+40} y={y+18} width="45" height="6" rx="3" fill="#98A2B3"/></g>)}
+      <rect x="438" y="334" width="94" height="24" rx="12" fill="#3867F6"/><text x="455" y="350" className="visual-status">READY</text>
+    </svg><div className="visual-caption"><span>Clear requirements</span><span className="pulse-dot"/><span>Relevant screening</span><span className="pulse-dot"/><strong>Confident shortlist</strong></div>
   </div>;
 }

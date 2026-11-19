@@ -1,8 +1,8 @@
 const faqs = [
-  ["Who does Scouttal work with?", "We are designed for international startups and product companies hiring talent in India, particularly teams in the US, UK, Europe, Canada and Australia."],
+  ["Who does Scouttal work with?", "We support startups, small and medium businesses, product companies and established organisations worldwide that are hiring talent from India."],
   ["Which technical roles do you recruit?", "Our focus includes full-stack, frontend, backend, software and DevOps engineering, plus other specialist engineering roles agreed for each search."],
   ["Can you support Web3 recruitment?", "Yes. We can source for relevant Solana, Rust, blockchain, smart-contract, Web3 full-stack and DeFi engineering assignments."],
-  ["Which countries do you support?", "Our positioning is built for international clients, with a focus on the US, UK, Europe, Canada and Australia hiring in India."],
+  ["Which countries do you support?", "Scouttal works with companies worldwide that are hiring talent from India. We can discuss time-zone, interview and coordination requirements during the initial role conversation."],
   ["Which seniority levels can you cover?", "Scope is agreed role by role. We can discuss individual contributor and leadership searches where the requirements fit our sourcing expertise."],
   ["How are fees structured?", "Scouttal uses role-specific placement fees. Pricing depends on role complexity, seniority and the agreed scope."],
   ["When is payment due?", "Our proposed model is payment after the placed candidate completes their first month, subject to the final agreed commercial terms."],

@@ -12,3 +12,4 @@ h1,h2,h3{font-family:var(--font-manrope),Arial,sans-serif;letter-spacing:-.035em
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .founder-grid-single{grid-template-columns:minmax(0,760px)}
 @media(max-width:680px){.founder-grid-single{grid-template-columns:1fr}}
+.visual-kicker{font:800 10px var(--font-inter);letter-spacing:.14em;fill:#667085}.visual-kicker-light{fill:#98b4ff}.visual-status{font:800 10px var(--font-inter);letter-spacing:.12em;fill:#fff}

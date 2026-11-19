@@ -6,13 +6,13 @@ export type Article = {
 
 export const articles: Article[] = [
   {
-    title: "Hiring Developers in India: A Guide for International Startups",
+    title: "Hiring Developers in India: A Guide for International Companies",
     slug: "hiring-developers-in-india",
     category: "Hiring in India",
     excerpt: "A practical framework for defining, evaluating and coordinating an India-based developer search from abroad.",
     publicationDate: "2026-11-12", readingTime: "7 min read",
-    seoTitle: "Hiring Developers in India | A Guide for Startups",
-    seoDescription: "A practical guide for international startups planning to hire developers in India.",
+    seoTitle: "Hiring Developers in India | A Guide for Companies",
+    seoDescription: "A practical guide for international companies planning to hire developers in India.",
     sections: [
       { heading: "Start with the work, not the wish list", paragraphs: ["A useful brief explains the product context, the problems the engineer will own and the decisions they are expected to make. Separate essential capabilities from tools that can be learned on the job."], bullets: ["Define the first 90 days", "Clarify collaboration hours", "Name the actual technical constraints"] },
       { heading: "Make evaluation consistent", paragraphs: ["Agree on what good looks like before profiles arrive. A compact scorecard makes screening more focused and gives interviewers a shared language for feedback."], bullets: ["Technical depth", "Product judgement", "Communication", "Ownership"] },
@@ -20,16 +20,16 @@ export const articles: Article[] = [
     ]
   },
   {
-    title: "Building Your First Engineering Team",
+    title: "Building and Strengthening Your Engineering Team",
     slug: "building-your-first-engineering-team",
     category: "Engineering Hiring",
-    excerpt: "How early-stage teams can turn product priorities into a focused, realistic engineering hiring plan.",
+    excerpt: "How companies at different stages can turn product priorities into a focused, realistic engineering hiring plan.",
     publicationDate: "2026-11-05", readingTime: "6 min read",
-    seoTitle: "Building Your First Engineering Team | Scouttal",
-    seoDescription: "A clear framework for early-stage startups building their first engineering team.",
+    seoTitle: "Building and Strengthening an Engineering Team | Scouttal",
+    seoDescription: "A clear framework for companies building or strengthening an engineering team.",
     sections: [
       { heading: "Sequence roles around risk", paragraphs: ["The first hires should reduce the most important delivery risks. That may mean broad product engineers, a backend specialist or infrastructure experience depending on what the roadmap demands."], bullets: ["Map the next two product milestones", "Identify single points of failure", "Prioritise complementary strengths"] },
-      { heading: "Hire for the stage you are in", paragraphs: ["Early-stage work often requires ambiguity tolerance and direct collaboration with founders. Make those conditions visible rather than presenting a generic role description."] },
+      { heading: "Hire for the stage you are in", paragraphs: ["A new team may need broad ownership, while an established function may need deeper specialization or leadership. Make those conditions visible rather than presenting a generic role description."] },
       { heading: "Keep the process decisive", paragraphs: ["Use a small, informed interview panel, collect evidence against a shared scorecard and give candidates clear next steps after every conversation."] }
     ]
   },
