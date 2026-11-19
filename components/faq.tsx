@@ -1,5 +1,5 @@
 const faqs = [
-  ["Who does Scouttal work with?", "We support startups, small and medium businesses, product companies and established organisations worldwide that are hiring talent from India."],
+  ["Who does Scouttal work with?", "Scouttal works with organisations worldwide that need focused support sourcing and recruiting technical or business talent in India."],
   ["Which technical roles do you recruit?", "Our focus includes full-stack, frontend, backend, software and DevOps engineering, plus other specialist engineering roles agreed for each search."],
   ["Can you support Web3 recruitment?", "Yes. We can source for relevant Solana, Rust, blockchain, smart-contract, Web3 full-stack and DeFi engineering assignments."],
   ["Which countries do you support?", "Scouttal works with companies worldwide that are hiring talent from India. We can discuss time-zone, interview and coordination requirements during the initial role conversation."],
