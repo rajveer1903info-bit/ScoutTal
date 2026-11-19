@@ -1,0 +1,3 @@
+import type { MetadataRoute } from "next"; import { articles } from "@/lib/articles";
+export const dynamic = "force-static";
+export default function sitemap():MetadataRoute.Sitemap{const base="https://scouttal.example";const pages=["","/services","/industries","/process","/about","/insights","/jobs","/contact"];return [...pages.map(p=>({url:`${base}${p}`,lastModified:new Date(),changeFrequency:p===""?"weekly" as const:"monthly" as const,priority:p===""?1:.7})),...articles.map(a=>({url:`${base}/insights/${a.slug}`,lastModified:new Date(a.publicationDate),changeFrequency:"monthly" as const,priority:.6}))]}

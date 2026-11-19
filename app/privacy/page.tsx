@@ -1,0 +1,3 @@
+import type { Metadata } from "next"; import { Container, PageHero } from "@/components/ui";
+export const metadata:Metadata={title:"Privacy Policy",robots:{index:false,follow:true}};
+export default function Privacy(){return <><PageHero eyebrow="LEGAL" title="Privacy Policy" description="This page is a launch-ready placeholder and requires review for Scouttal's actual data practices before publication."/><section className="section"><Container className="prose"><h2>Before launch</h2><p>Replace this placeholder with a policy reviewed for the jurisdictions, enquiry tools, analytics and recruitment data systems Scouttal actually uses. The current prototype does not submit contact-form data.</p></Container></section></>}

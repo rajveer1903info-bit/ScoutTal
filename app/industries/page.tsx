@@ -1,0 +1,11 @@
+import type { Metadata } from "next";
+import { Container, CTA, PageHero, SectionHeading } from "@/components/ui";
+export const metadata: Metadata={title:"Industries",description:"Recruitment for technology, SaaS, fintech, Web3 and early-stage product companies hiring in India.",alternates:{canonical:"/industries"}};
+const industries=[
+  ["Technology Startups","Product velocity depends on engineers who can work with ambiguity and own meaningful outcomes.",["Full-stack and specialist engineers","DevOps and platform talent","Business operations"]],
+  ["SaaS Companies","Recurring-revenue products need teams that understand customer workflows, reliable delivery and scale.",["Frontend, backend and full-stack developers","Customer Success and Support","Business Analysts"]],
+  ["Fintech Startups","Technical depth, operational care and domain awareness shape both product and hiring decisions.",["Backend and platform engineers","Business Analysts","Customer operations"]],
+  ["Web3 & Blockchain Companies","Protocol and application-layer teams require precise mapping of languages, chains and security exposure.",["Solana and Rust developers","Smart-contract engineers","Web3 full-stack and DeFi roles"]],
+  ["Early-stage Product Companies","The first hires must match today’s roadmap while helping the organisation mature.",["Broad product engineers","Specialists around critical technical risk","Business development and operations"]]
+];
+export default function Industries(){return <><PageHero eyebrow="INDUSTRIES" title="Recruitment shaped around the company you are building." description="We focus on the talent patterns relevant to ambitious product companies—without implying a one-size-fits-all hiring playbook."/><section className="section"><Container><SectionHeading eyebrow="WHERE WE FOCUS" title="Context before candidate lists." intro="These are sectors Scouttal is equipped to support, not a claim of prior client engagement."/><div className="industry-list">{industries.map(([name,copy,roles],i)=><article key={String(name)}><span>{String(i+1).padStart(2,"0")}</span><div><h2>{String(name)}</h2><p>{String(copy)}</p></div><ul>{(roles as string[]).map(r=><li key={r}>{r}</li>)}</ul></article>)}</div></Container></section><CTA/></>}

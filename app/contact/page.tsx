@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import { Calendar, Mail } from "lucide-react";
+import { ContactForm } from "@/components/contact-form";
+import { Container, PageHero } from "@/components/ui";
+import { isConfiguredUrl, siteConfig } from "@/lib/config";
+export const metadata:Metadata={title:"Contact",description:"Discuss a technical or business hiring requirement in India with Scouttal.",alternates:{canonical:"/contact"}};
+export default function Contact(){return <><PageHero eyebrow="CONTACT" title="Tell us about the role you need to fill." description="Share the company context, hiring priority and role. We will use that information to shape the first recruitment conversation."/><section className="section"><Container className="contact-grid"><div><h2>Start with the channel that suits you.</h2><div className="contact-option" id="email"><Mail/><div><span>EMAIL</span><strong>{siteConfig.businessEmail}</strong><p>Business email placeholder—configure before launch.</p></div></div><div className="contact-option"><Calendar/><div><span>DISCOVERY CALL</span>{isConfiguredUrl(siteConfig.calendlyUrl)?<a href={siteConfig.calendlyUrl}>Choose a time</a>:<strong>{siteConfig.calendlyUrl}</strong>}<p>Booking URL placeholder—configure before launch.</p></div></div><p className="config-note">All business details are centralized in <code>lib/config.ts</code>. No placeholder is treated as a working contact channel.</p></div><div><ContactForm/></div></Container></section></>}
