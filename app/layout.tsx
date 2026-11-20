@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://scouttal.example"),
-  title: { default: "Scouttal | Recruitment Partner for Companies Hiring from India", template: "%s | Scouttal" },
+  title: { default: "Scouttal | Focused Global Recruitment", template: "%s | Scouttal" },
   description: siteConfig.description,
   openGraph: { title: "Scouttal", description: siteConfig.description, type: "website", siteName: "Scouttal" },
   twitter: { card: "summary_large_image", title: "Scouttal", description: siteConfig.description },

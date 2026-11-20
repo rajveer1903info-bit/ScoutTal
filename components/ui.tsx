@@ -22,5 +22,5 @@ export function PageHero({ eyebrow, title, description, children }: { eyebrow: s
 }
 
 export function CTA() {
-  return <section className="cta"><Container className="cta-inner"><div><Eyebrow>START A CONVERSATION</Eyebrow><h2>Have a role you need to fill?</h2><p>Let’s discuss your hiring requirements and explore how Scouttal can help you build your team in India.</p></div><div className="button-row"><ButtonLink href="/contact" variant="light">Book a Discovery Call</ButtonLink><ButtonLink href="/contact#email" variant="secondary">Email Us</ButtonLink></div></Container></section>;
+  return <section className="cta"><Container className="cta-inner"><div><Eyebrow>START A CONVERSATION</Eyebrow><h2>Pass the search to us.</h2><p>Tell us who you need. We’ll bring focus, momentum and the right people to the process.</p></div><div className="button-row"><ButtonLink href="/contact" variant="light">Book a Call</ButtonLink><ButtonLink href="/contact#email" variant="secondary">Email Us</ButtonLink></div></Container></section>;
 }

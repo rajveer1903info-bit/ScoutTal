@@ -4,7 +4,7 @@ export const siteConfig = {
   businessEmail: "[EMAIL]",
   calendlyUrl: "[CALENDLY_LINK]",
   linkedInUrl: "[LINKEDIN_URL]",
-  description: "Founder-led recruitment partner providing sourcing, screening, shortlisting and hiring coordination for technical and business talent in India.",
+  description: "Founder-led global recruitment partner providing focused sourcing, screening, shortlisting and hiring coordination for technical and business-critical talent.",
 } as const;
 
 export const isConfiguredUrl = (value: string) => !value.startsWith("[");
