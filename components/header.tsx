@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const links = [
   ["Home", "/"], ["Services", "/services"], ["Industries", "/industries"],
-  ["How We Work", "/process"], ["About Us", "/about"], ["Insights", "/insights"], ["Jobs", "/jobs"]
+  ["How We Work", "/process"], ["About Us", "/about"], ["Insights", "/insights"], ["FAQ", "/faq"], ["Jobs", "/jobs"]
 ];
 
 export function Header() {
