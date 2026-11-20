@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Container, CTA, PageHero, SectionHeading } from "@/components/ui";
+import { FAQ } from "@/components/faq";
 export const metadata: Metadata={title:"Industries",description:"Specialist recruitment across technology, SaaS, fintech, Web3 and product-led businesses hiring talent from India.",alternates:{canonical:"/industries"}};
 const industries=[
-  ["Technology Companies","Product velocity depends on engineers who can own meaningful outcomes across new and established teams.",["Full-stack and specialist engineers","DevOps and platform talent","Business operations"]],
-  ["SaaS and Product Businesses","Recurring-revenue products need teams that understand customer workflows, reliable delivery and scale.",["Frontend, backend and full-stack developers","Customer Success and Support","Business Analysts"]],
-  ["Fintech and Financial Services","Technical depth, operational care and domain awareness shape both product and hiring decisions.",["Backend and platform engineers","Business Analysts","Customer operations"]],
-  ["Web3 & Blockchain Companies","Protocol and application-layer teams require precise mapping of languages, chains and security exposure.",["Solana and Rust developers","Smart-contract engineers","Web3 full-stack and DeFi roles"]],
-  ["Business Services and Operations","Reliable operational and customer-facing teams help organisations deliver consistently as requirements change.",["Business-critical operations roles","Customer Success and Support","Business development and coordination"]]
+  "Technology",
+  "SaaS and Product",
+  "Fintech and Financial Services",
+  "Web3 and Blockchain",
+  "Business Services and Operations"
 ];
-export default function Industries(){return <><PageHero eyebrow="INDUSTRIES" title="Recruitment shaped around the company you are building." description="We focus on the talent patterns relevant to ambitious product companies—without implying a one-size-fits-all hiring playbook."/><section className="section"><Container><SectionHeading eyebrow="WHERE WE FOCUS" title="Context before candidate lists." intro="These are sectors Scouttal is equipped to support, not a claim of prior client engagement."/><div className="industry-list">{industries.map(([name,copy,roles],i)=><article key={String(name)}><span>{String(i+1).padStart(2,"0")}</span><div><h2>{String(name)}</h2><p>{String(copy)}</p></div><ul>{(roles as string[]).map(r=><li key={r}>{r}</li>)}</ul></article>)}</div></Container></section><CTA/></>}
+export default function Industries(){return <><PageHero eyebrow="INDUSTRIES" title="Recruitment expertise across evolving industries." description="Scouttal supports specialist hiring across technology-led, financial and business-critical sectors."/><section className="section"><Container><SectionHeading eyebrow="INDUSTRIES WE SUPPORT" title="Focused sector coverage." intro="A concise view of the industries where we support recruitment assignments."/><div className="industry-list industry-list-compact">{industries.map((name,i)=><article key={name}><span>{String(i+1).padStart(2,"0")}</span><h2>{name}</h2></article>)}</div></Container></section><section className="section scope-section"><Container><SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" title="The practical details, answered."/><FAQ/></Container></section><CTA/></>}
