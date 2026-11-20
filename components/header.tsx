@@ -11,7 +11,7 @@ const links = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  return <header className="site-header"><div className="container nav-wrap">
+  return <header className="site-header"><div className="top-callout"><div className="container top-callout-inner"><p>Your team should build the product—not spend weeks searching for the people who will.</p><Link href="/contact" className="top-callout-link">Book a Call</Link></div></div><div className="container nav-wrap">
     <Link href="/" className="wordmark" aria-label="Scouttal home">scouttal<span>.</span></Link>
     <nav className="desktop-nav" aria-label="Primary navigation">{links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</nav>
     <Link href="/contact" className="button button-primary nav-cta">Discuss Your Hiring Needs</Link>
