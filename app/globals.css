@@ -808,6 +808,31 @@ p { margin: 0; color: var(--slate); text-wrap: pretty; }
 .service-partner-band h2 { margin-top: 18px; font-size: clamp(2rem, 3.4vw, 3.3rem); }
 .service-partner-band p { color: var(--dark-text); font-size: 1.03rem; }
 .service-partner-band .button { margin-top: 26px; }
+.verification-service {
+  margin-top: 18px;
+  padding: 34px 38px;
+  border-radius: var(--r-lg);
+  background: #fff;
+  box-shadow: var(--shadow-sm), inset 0 0 0 1px rgba(56, 103, 246, 0.12);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 26px;
+  align-items: center;
+}
+.verification-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--blue);
+  box-shadow: 0 8px 18px -8px rgba(56, 103, 246, 0.7);
+}
+.verification-icon svg { width: 23px; height: 23px; }
+.verification-service span { color: var(--blue); font-size: 0.68rem; letter-spacing: 0.13em; font-weight: 750; }
+.verification-service h2 { margin: 6px 0 8px; font-size: 1.55rem; }
+.verification-service p { max-width: 70ch; font-size: 0.9rem; }
 
 /* --------------------------------------------------------------------------
    Industries
@@ -1380,6 +1405,8 @@ p { margin: 0; color: var(--slate); text-wrap: pretty; }
 
   .industry-tile, .industry-tile:nth-child(1), .industry-tile:nth-child(2) { grid-column: span 6; }
   .service-partner-band { grid-template-columns: 1fr; gap: 28px; }
+  .verification-service { grid-template-columns: auto 1fr; }
+  .verification-service .button { grid-column: 2; justify-self: start; }
 }
 
 /* --------------------------------------------------------------------------
@@ -1424,6 +1451,8 @@ p { margin: 0; color: var(--slate); text-wrap: pretty; }
   .service-capability-grid article { min-height: 290px; padding: 28px; }
   .service-capability-grid h2 { margin-top: 42px; }
   .service-partner-band { padding: 30px; border-radius: var(--r-lg); }
+  .verification-service { grid-template-columns: 1fr; padding: 26px; }
+  .verification-service .button { grid-column: auto; justify-self: stretch; }
   .industry-list article { grid-template-columns: 35px 1fr; gap: 20px; }
   .industry-list article ul { grid-column: 2; }
   .commercial-band { grid-template-columns: 1fr; padding: 28px; gap: 24px; border-radius: var(--r-lg); }
