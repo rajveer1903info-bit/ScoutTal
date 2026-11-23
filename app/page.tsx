@@ -1,3 +1,4 @@
+import type React from "react";
 import Link from "next/link";
 import { BriefcaseBusiness, Check, Code2, SearchCheck, Users } from "lucide-react";
 import { ButtonLink, Container, CTA, Eyebrow, SectionHeading } from "@/components/ui";
@@ -15,7 +16,19 @@ const steps=[
 ];
 
 export default function Home(){return <>
-  <section className="home-hero"><Container><div className="home-hero-grid"><div><Eyebrow>GLOBAL RECRUITMENT, FOUNDER-LED</Eyebrow><h1>We scout the talent.<br/><span>You build what’s next.</span></h1><p>Focused recruitment for technical and business-critical roles—without the noise, delays or endless searching.</p><div className="button-row"><ButtonLink href="/contact">Book a Call</ButtonLink><ButtonLink href="/services" variant="secondary">View Services</ButtonLink></div></div><div className="talent-signal" aria-label="A focused path from talent search to successful hire"><div className="signal-ring signal-ring-one"/><div className="signal-ring signal-ring-two"/><span className="signal-dot dot-one"/><span className="signal-dot dot-two"/><span className="signal-dot dot-three"/><div className="signal-core"><Users/><strong>Right talent</strong><small>Clear vision</small></div></div></div><div className="trust-strip"><span>FOCUSED SEARCH</span><span>GLOBAL REACH</span><span>FOUNDER-LED</span><span>END-TO-END SUPPORT</span></div></Container></section>
+  <section className="home-hero"><Container><div className="home-hero-grid">
+    <div>
+      <div data-enter="support" style={{"--d":"0ms"} as React.CSSProperties}><Eyebrow>GLOBAL RECRUITMENT, FOUNDER-LED</Eyebrow></div>
+      <h1 data-enter="lead" style={{"--d":"60ms"} as React.CSSProperties}>We scout the talent.<br/><span>You build what’s next.</span></h1>
+      <p data-enter="support" style={{"--d":"180ms"} as React.CSSProperties}>Focused recruitment for technical and business-critical roles—without the noise, delays or endless searching.</p>
+      <div className="button-row" data-enter="support" style={{"--d":"260ms"} as React.CSSProperties}><ButtonLink href="/contact">Book a Call</ButtonLink><ButtonLink href="/services" variant="secondary">View Services</ButtonLink></div>
+    </div>
+    <div className="talent-signal" role="img" aria-label="A focused path from talent search to successful hire" data-enter="fade" style={{"--d":"120ms"} as React.CSSProperties}>
+      <div className="signal-ring signal-ring-one"/><div className="signal-ring signal-ring-two"/>
+      <div className="signal-orbit" aria-hidden="true"><span className="signal-dot dot-one"/><span className="signal-dot dot-two"/><span className="signal-dot dot-three"/></div>
+      <div className="signal-core"><Users/><strong>Right talent</strong><small>Clear vision</small></div>
+    </div>
+  </div><div className="trust-strip" data-enter="fade" style={{"--d":"320ms"} as React.CSSProperties}><span>FOCUSED SEARCH</span><span>GLOBAL REACH</span><span>FOUNDER-LED</span><span>END-TO-END SUPPORT</span></div></Container></section>
 
   <section className="section home-services"><Container><SectionHeading eyebrow="WHAT WE DO" title="A recruitment partner that does the work." intro="From the first brief to the accepted offer, Scouttal keeps hiring focused and moving."/><div className="simple-service-grid">{services.map(({Icon,title,copy},i)=><article key={title}><span>0{i+1}</span><Icon/><h3>{title}</h3><p>{copy}</p></article>)}</div><Link className="text-link" href="/services">Explore all recruitment services</Link></Container></section>
 
