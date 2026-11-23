@@ -30,7 +30,7 @@ export default function Home(){return <>
     </div>
   </div><div className="trust-strip" data-enter="fade" style={{"--d":"320ms"} as React.CSSProperties}><span>FOCUSED SEARCH</span><span>GLOBAL REACH</span><span>FOUNDER-LED</span><span>END-TO-END SUPPORT</span></div></Container></section>
 
-  <section className="section home-services"><Container><SectionHeading eyebrow="WHAT WE DO" title="A recruitment partner that does the work." intro="From the first brief to the accepted offer, Scouttal keeps hiring focused and moving."/><div className="simple-service-grid">{services.map(({Icon,title,copy},i)=><article key={title}><span>0{i+1}</span><Icon/><h3>{title}</h3><p>{copy}</p></article>)}</div><Link className="text-link" href="/services">Explore all recruitment services</Link></Container></section>
+  <section className="section home-services"><Container><SectionHeading eyebrow="WHAT WE DO" title="A recruitment partner that does the work." intro="From the first brief to the accepted offer, Scouttal keeps hiring focused and moving."/><div className="simple-service-grid">{services.map(({Icon,title,copy})=><article key={title}><Icon/><h3>{title}</h3><p>{copy}</p></article>)}</div><Link className="text-link" href="/services">Explore all recruitment services</Link></Container></section>
 
   <section className="section home-process"><Container><div className="process-intro"><SectionHeading eyebrow="HOW IT WORKS" title="Three steps. One accountable partner."/><p>Less administration for your team. More attention on the people worth meeting.</p></div><ol className="simple-steps">{steps.map(([number,title,copy])=><li key={number}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol></Container></section>
 
