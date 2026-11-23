@@ -1,6 +1,6 @@
 import type React from "react";
 import Link from "next/link";
-import { BriefcaseBusiness, Check, Code2, SearchCheck, Users } from "lucide-react";
+import { Blocks, BriefcaseBusiness, Check, Code2, Landmark, PanelsTopLeft, SearchCheck, Users } from "lucide-react";
 import { ButtonLink, Container, CTA, Eyebrow, SectionHeading } from "@/components/ui";
 
 const services=[
@@ -15,12 +15,20 @@ const steps=[
   ["03","Hire","We coordinate the process through offer and joining."]
 ];
 
+const industries=[
+  {Icon:Code2,label:"Technology"},
+  {Icon:PanelsTopLeft,label:"SaaS & Product"},
+  {Icon:Landmark,label:"Fintech"},
+  {Icon:Blocks,label:"Web3"},
+  {Icon:BriefcaseBusiness,label:"Business Operations"}
+];
+
 export default function Home(){return <>
   <section className="home-hero"><Container><div className="home-hero-grid">
     <div>
       <div data-enter="support" style={{"--d":"0ms"} as React.CSSProperties}><Eyebrow>GLOBAL RECRUITMENT, FOUNDER-LED</Eyebrow></div>
-      <h1 data-enter="lead" style={{"--d":"60ms"} as React.CSSProperties}>We scout the talent.<br/><span>You build what’s next.</span></h1>
-      <p data-enter="support" style={{"--d":"180ms"} as React.CSSProperties}>Focused recruitment for technical and business-critical roles—without the noise, delays or endless searching.</p>
+      <h1 data-enter="lead" style={{"--d":"60ms"} as React.CSSProperties}>We scout the people.<br/><span>You shape what’s next.</span></h1>
+      <p data-enter="support" style={{"--d":"180ms"} as React.CSSProperties}>Focused global recruitment for technical and business-critical teams—built around your vision, not a database.</p>
       <div className="button-row" data-enter="support" style={{"--d":"260ms"} as React.CSSProperties}><ButtonLink href="/contact">Book a Call</ButtonLink><ButtonLink href="/services" variant="secondary">View Services</ButtonLink></div>
     </div>
     <div className="talent-signal" role="img" aria-label="A focused path from talent search to successful hire" data-enter="fade" style={{"--d":"120ms"} as React.CSSProperties}>
@@ -31,6 +39,8 @@ export default function Home(){return <>
   </div><div className="trust-strip" data-enter="fade" style={{"--d":"320ms"} as React.CSSProperties}><span>FOCUSED SEARCH</span><span>GLOBAL REACH</span><span>FOUNDER-LED</span><span>END-TO-END SUPPORT</span></div></Container></section>
 
   <section className="section home-services"><Container><SectionHeading eyebrow="WHAT WE DO" title="A recruitment partner that does the work." intro="From the first brief to the accepted offer, Scouttal keeps hiring focused and moving."/><div className="simple-service-grid">{services.map(({Icon,title,copy})=><article key={title}><Icon/><h3>{title}</h3><p>{copy}</p></article>)}</div><Link className="text-link" href="/services">Explore all recruitment services</Link></Container></section>
+
+  <section className="section home-industries"><Container className="home-industries-grid"><div><Eyebrow>WHERE WE WORK</Eyebrow><h2>Across sectors.<br/>Always role-first.</h2><p>From software and product to finance, Web3 and operations, every search begins with the work that needs to get done.</p><ButtonLink href="/industries" variant="secondary">Explore Industries</ButtonLink></div><div className="sector-stack" aria-label="Industries Scouttal supports">{industries.map(({Icon,label})=><div key={label}><span><Icon/></span><strong>{label}</strong></div>)}</div></Container></section>
 
   <section className="section home-process"><Container><div className="process-intro"><SectionHeading eyebrow="HOW IT WORKS" title="Three steps. One accountable partner."/><p>Less administration for your team. More attention on the people worth meeting.</p></div><ol className="simple-steps">{steps.map(([number,title,copy])=><li key={number}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol></Container></section>
 
