@@ -1,6 +1,6 @@
 import type React from "react";
 import Link from "next/link";
-import { Blocks, BriefcaseBusiness, Check, Code2, Landmark, PanelsTopLeft, SearchCheck, Users } from "lucide-react";
+import { Blocks, BriefcaseBusiness, Check, Code2, Landmark, SearchCheck, Users } from "lucide-react";
 import { ButtonLink, Container, CTA, Eyebrow, SectionHeading } from "@/components/ui";
 
 const services=[
@@ -17,7 +17,6 @@ const steps=[
 
 const industries=[
   {Icon:Code2,label:"Technology"},
-  {Icon:PanelsTopLeft,label:"SaaS & Product"},
   {Icon:Landmark,label:"Fintech"},
   {Icon:Blocks,label:"Web3"},
   {Icon:BriefcaseBusiness,label:"Business Operations"}
@@ -26,7 +25,7 @@ const industries=[
 export default function Home(){return <>
   <section className="home-hero"><Container><div className="home-hero-grid">
     <div>
-      <div data-enter="support" style={{"--d":"0ms"} as React.CSSProperties}><Eyebrow>GLOBAL RECRUITMENT &amp; RPO PARTNER</Eyebrow></div>
+      <div data-enter="support" style={{"--d":"0ms"} as React.CSSProperties}><Eyebrow>THE RIGHT TALENT CHANGES EVERYTHING</Eyebrow></div>
       <h1 data-enter="lead" style={{"--d":"60ms"} as React.CSSProperties}>We scout the talent.<br/><span>You build the product.</span></h1>
       <p data-enter="support" style={{"--d":"180ms"} as React.CSSProperties}>Scouttal works as your external recruitment partner—owning the search, screening and coordination so your team can keep building.</p>
       <div className="button-row" data-enter="support" style={{"--d":"260ms"} as React.CSSProperties}><ButtonLink href="/contact">Book a Call</ButtonLink><ButtonLink href="/services" variant="secondary">View Services</ButtonLink></div>
